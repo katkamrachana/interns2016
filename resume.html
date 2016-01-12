@@ -1,0 +1,43 @@
+<html>
+<head>
+	<style type="text/css">
+	.show-btn{
+		width: 20em;
+	}
+	</style>
+</head>
+<body style="margin-top:2em;">
+	<h3>
+		Name: Rachana Katkam
+	</h3>
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details"><br/><br/>
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()">
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h5>My Qualifications</h5>
+	</div>
+
+	<div id="proj-div" style="display:none">
+		<h5>My Projects</h5>
+	</div>
+
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+		qual_ele.onclick = function() {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
+
+		function show_projs(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying Projects');
+		}
+
+	</script>
+
+
+</body>
+</html>
