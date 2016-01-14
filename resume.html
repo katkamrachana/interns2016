@@ -1,230 +1,43 @@
 <html>
-
 <head>
-	
-<style type="text/css">
-	
-.show-btn{
- color: #900;
-  font-weight: bold;
-	
-}
-
-	
-.body{
-	background-color: yellow;
-	
-}
-	
-</style>
-
+	<style type="text/css">
+	.show-btn{
+		width: 20em;
+	}
+	</style>
 </head>
-
-<body style="margin-top:2em;" bgcolor="cornsilk">
-	
-< h3>
-		Name: Mukul Kashyap
+<body style="margin-top:2em;">
+	<h3>
+		Name: Rachana Katkam
 	</h3>
-<br>	
-<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details">
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details"><br/><br/>
 	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()">
-	<input type="button" class="show-btn" id="show-hob" value="Show Hobbies" onclick="show_hobs()">
-	
 
-
-	
-<!-- List Qualifications/Projects in an innovative way -->
+	<!-- List Qualifications/Projects in an innovative way -->
 	<div id="qual-div" style="display:none">
-		
-<table style= "width: 45%">
-		
-<h5><font color="Orange" size="3px"><I>My Qualifications</I></font></h5>
-		<tr>
-		
-<td><h4><font color="grey"><b>Education</b></font></h4></td>
-		
-<td><h4><font color="grey"><b>Board</b></font></h4></td>
-		
-<td><h4><font color="grey"><b>College</b></font></h4></td>
-		
-</tr>
-		
-<tr>
-		
-<td>S.S.C</td>
-		
-<td>Maharastra Board</td>
-		
-<td>ST. Aloysius High School</td>
-		
-</tr>
-		
-<tr>
-		
-<td>H.S.C</td>
-		
-<td>Maharastra Board</td>
-		
-<td>Sheth Vidya Mandir Jr. College</td>
-		
-</tr>
-		
-<tr>
-		
-<td>Bsc(IT)</td>
-		
-<td>Mumbai university</td>
-		
-<td>L.S Raheja College</td>
-		
-</tr>
-		
-<tr>
-		
-<td>MCA</td>
-		
-<td>Mumbai university</td>
-		
-<td>MET College</td>
-		
-</tr>
-		
-</table>
-		
-</div>
+		<h5>My Qualifications</h5>
+	</div>
 
 	<div id="proj-div" style="display:none">
-		
-<h5><font color="Orange" size="3px"><I>My Projects</I></font></h5>
-		
-<table style= "width: 40%">
-		
-<tr>
-		
-<td><h4><font color="grey"><b>Project Name</b></h4></td>
-		
-<td><h4><font color="grey"><b>Technology Used</b></h4></td>
-		
-</tr>
-		
-<tr>
-		
-<td>Shoppers Stop - Online Shopping Portal</td>
-		
-<td>Asp.net, C#, SQL Server</td>
-		
-</tr>
-		
-<tr>
-		
-<td>Antizer - Online Book portal</td>
-		
-<td>PHP, SQL Server</td>
-		
-</tr>
-		
-<tr>
-		
-<td>Bookers - Online Book Management</td>
-		
-<td>Java, SQL Server</td>
-		
-</tr>
-		
-<tr>
-		
-<td>Feedback Forum - Online Feedback System</td>
-		
-<td>Asp.net, C#, SQL Server</td>
-		
-</tr>
-		
-</table>
-	
-</div>
+		<h5>My Projects</h5>
+	</div>
 
-	
-<div id="hob-div" style="display:none">
-		
-<h5><font color="Orange" size="3px"><I>My Hobbies</I></font></h5>
-		
-<table style= "width: 40%">
-		
-<tr>
-		
-<td>Football &nbsp;|&nbsp;Reading Articles&nbsp;|&nbsp;Playing Piano</td>
-		</tr>
-	
-</div>
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+		qual_ele.onclick = function() {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
 
+		function show_projs(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying Projects');
+		}
 
-	
-<script type="text/javascript">
-		
-var qual_ele = document.getElementById('show-qual')
-		
-qual_ele.onclick = function() {
-			
-var qual_div = document.getElementById('qual-div')
-			
-if(qual_div.style.display == "block")
-			
-qual_div.style.display = "none"
-			
-else
-			
-qual_div.style.display = "block"
-		    
-console.log('Displaying Qualifications');
-
-                
-	};
-
-		
-function show_projs(){
-			
-var proj_div = document.getElementById('proj-div')
-			
-if(proj_div.style.display == "block")
-			
-proj_div.style.display = "none"
-			
-else
-			
-proj_div.style.display = "block"
-		    
-console.log('Displaying Projects');
-		
-}
-	
-
-		
-function show_hobs(){
-			
-var hob_div = document.getElementById('hob-div')
-			
-if(hob_div.style.display == "block")
-			
-hob_div.style.display = "none"
-			
-else
-			
-hob_div.style.display = "block"
-		    
-console.log('Displaying Languages');
-
-                  
-		
-}
-
-	
-
-
-	
-</script>
-
+	</script>
 
 
 </body>
-
 </html>
