@@ -1,0 +1,107 @@
+<html>
+<head>
+	<style type="text/css">
+	body {
+    background-color: rgb(179, 255, 224);
+		}
+	.show-btn{
+	background-color: #E3E1B8; 
+	border-radius: 28px;
+  font-family: Arial;
+  color: #ff339b;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+		width : 20em;
+	}
+	</style>
+</head>
+<body style="margin-top:2em;" align="center">
+	<h3>
+		<font color="red" >Name: Yogesh Kadam</font>
+	</h3>
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details" onclick="show_qual()" align="center"><br/><br/>
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()"><br/><br/>
+	<input type="button" class="show-btn" id="show-pers" value="Show Personal Details" onClick="show_pers()"><br/><br/>
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h5>My Qualifications</h5><br/>
+		<table style="width:100%" border="2%">
+	<tr><td><h3>Qualification</h3></td><td><h3>School/College</h3></td><td><h3>University/Board</h3></td><td><h3>Year</h3></td><td><h3>Marks</h3></td></tr>
+	<tr><td>MCA (Master of Computer Application)</td> <td>MET Institute of Computer Science, Bandra, Mumbai</td><td>Mumbai University</td><td>2013-Present</td><td>
+Sem I - 61.00%<br/>
+Sem II - 62.14%<br/>
+Sem III - 61.20%<br/>
+Sem IV - 63.57%
+</td></tr>
+	<tr><td>B.Sc. (Physics)</td>				 <td>Siddharth College, Fort,Mumbai</td><td>Mumbai University</td><td>2011</td><td>56.37%</td></tr>
+	<tr><td>H.S.C</td> 									<td>R.M. Bhat Jr College ,Parel,Mumbai</td>		<td>Maharashtra Board</td><td>2008</td><td>42.67%</td></tr>
+	<tr><td>S.S.C</td>							<td>A.E.S High School,Abhyudaynagar,Mumbai</td>	<td>Maharashtra Board</td><td>2006</td><td>60.26%</td></tr>
+  </table>
+
+	</div>
+
+	<div id="proj-div" style="display:none">
+		<h5>My Projects</h5>
+		<br/>
+		<ul>
+        <li>Academic Project: Maharashtra Guide App (June 2015 - July 2015)</li>
+		<ul>
+		<li>An Android application provide information about travelling option and best places to enjoy your holidays in Maharashtra.</li>
+		<li>Users can use the app to get various information such as culture, caves, history about Maharashtra </li>
+		<li>It is an android app created by using Android Studio, SQLite3 and Java 7 JDK.</li>
+		</ul>
+
+		<li>Academic Project: Chit-Chat Go (July 2014 – August 2014)</li>
+		<ul>
+		<li>A chatting website provide a platform for multiple user to interact and share text message with each other.</li>
+		<li>The website is created by using HTML for representation, PHP for front end, and CSS for design and MYSQL for back end.</li>
+		</ul>
+		
+		<li>Academic Project: ICS Cloud (August 2014 – September 2014)</li>
+		<ul>
+		<li>A Cloud Computing website which offer cloud storage and remote access for the user.</li>
+		<li>The website is created by using HTML for representation, PHP for front end, and CSS for design and MYSQL for back end.</li>
+		</ul>
+		
+		
+		</ul>
+	</div>
+	
+	<div id="pers-div" style="display:none">
+		<h5>My Personal Details</h5>
+		<h3>Yogesh V.Kadam</h3>
+		<h3>Yogesh2591@gmail.com</h3>
+		<h3>9029910761</h3>
+		<h3>Date of Birth: 25 February 1991. </h3>		
+	</div>
+
+	<script type="text/javascript">
+		var pers_div=document.getElementById("pers-div");
+			var proj_div=document.getElementById("proj-div");
+			var qual_div = document.getElementById('qual-div');
+		function show_qual(){
+		proj_div.style.display = "none";
+		pers_div.style.display = "none";
+		qual_div.style.display = "block";
+			//console.log('Displaying Qualification');
+		}
+		function show_projs(){
+					
+		pers_div.style.display = "none";
+		qual_div.style.display = "none";
+		proj_div.style.display = "block";
+			
+		    //console.log('Displaying Projects');
+		}
+		function show_pers(){
+					pers_div.style.display = "block";
+					qual_div.style.display = "none";
+					proj_div.style.display = "none";
+
+		    //console.log('Displaying Personal Details');
+		}
+	</script>
+
+</body>
+</html>
