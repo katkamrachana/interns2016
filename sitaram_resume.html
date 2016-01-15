@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.show-btn{
+		background-color: #585858;
+    		border: none;
+    		color: white;
+    		padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 13px;
+    		margin: 4px 2px;
+   		cursor: pointer;
+		
+	}
+
+.show-btn {border-radius: 8px;}
+
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+	}
+</style>
+</head>
+<body style="margin-top:2em;">
+<h1 style="text-align:center;">Resume</h1>
+	<h3>
+		Name: ABC15
+	</h3>
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details" onclick="show_qual()">
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_proj()">
+	<input type="button" class="show-btn" id="show-hobbies" value="Show Your Hobbies" onclick="show_hobbies()">
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h3 style="color:grey;"><u>Acadamic Qualifications</u></h3>
+
+		<table border="1" style="width:100%">
+  		<tr>
+    			<td><b>Course</b></td>
+    			<td><b>Percentage</b></td>		
+    			<td><b>University</b></td>
+			<td><b>Year</b></td>
+  		</tr>
+		 <tr>
+    			<td>SSC</td>
+    			<td>0.00%</td>		
+    			<td>Maharashtra</td>
+			<td>Year</td>
+  		</tr>
+		 <tr>
+    			<td>HSC</td>
+    			<td>0.00%</td>		
+    			<td>Maharashtra</td>
+			<td>Year</td>
+  		</tr>
+		 <tr>
+    			<td>Bsc(Cs)</td>
+    			<td>0.00%</td>		
+    			<td>Mumbai</td>
+			<td>Year</td>
+  		</tr>
+		 <tr>
+    			<td>Mca</td>
+    			<td>0.00%</td>		
+    			<td>Mumbai</td>
+			<td>Year</td>
+  		</tr>
+		</table>
+		
+	</div>
+
+	<div id="proj-div" style="display:none">
+		hello
+	</div>
+	<div id="hobbies-div" style="display:none">
+		<h5>My hobbies</h5>
+	</div>
+
+	<script>
+		function show_qual()
+		{
+			document.getElementById("qual-div").style.display="block";			
+			document.getElementById("proj-div").style.display="none";			
+			document.getElementById("hobbies-div").style.display="none";			
+		}
+
+		function show_proj()
+		{	
+			document.getElementById("proj-div").style.display="block";
+			document.getElementById("qual-div").style.display="none";
+			document.getElementById("hobbies-div").style.display="none";
+		}
+		
+		function show_hobbies()
+		{
+			document.getElementById("hobbies-div").style.display="block";
+			document.getElementById("proj-div").style.display="none";
+			document.getElementById("qual-div").style.display="none";			
+		}
+
+	</script>
+
+
+</body>
+</html>
