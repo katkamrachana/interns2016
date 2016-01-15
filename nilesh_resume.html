@@ -1,0 +1,176 @@
+<html>
+<head>
+	<style type="text/css">
+#header {
+    background-color:skyblue;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+
+
+	.show-btn{
+		width: 20em;
+	}
+	</style>
+</head>
+<body style="margin-top:2em;" bgcolor="d0e4fe">
+<div id="header">
+<h1> Resume </h1>
+</div>
+<div>
+<Label> <b>Name</b>:Nilesh mali</label><br>
+<Label><b> Email address</b>:nil_mali92@rediffmail.com</b></label><br>
+<label><b>phoneno:</b>9930507033</label>
+</div>
+<br>
+	
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details">
+	<input type="button" class="show-btn" id="show-skils" value="technical skills" onclick="show_techinalskill()">
+
+
+<br>
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<!DOCTYPE html>
+
+<table border="2" style="background-color:skyblue">
+<tr>
+<th> Qualification</th>
+<th> school/collegename</th>
+<th> Board</th>
+<th>year</th>
+<th>percentage</th>
+</tr>
+<tr>
+    <td align="center">MCA</td>
+    <td align="center">Met college</td>
+    <td align="center">mumbai university</td>
+<td align="center"> 2016</td>
+  <td align="center">65.00</td>		
+</tr>
+<tr>
+    <td align="center">BSC(IT)</td>
+    <td align="center">valia college</td>		
+    <td align="center">mumbai university</td>
+  <td align="center">2012</td>
+<td align="center">66.32</td>
+  </tr>
+  <tr>
+    <td align="center">HSC</td>
+    <td align="center">Shriniwas Bagaraka College (Jr)</td>
+    <td align="center">HSC board</td>		
+    <td align="center">2009</td>
+<td align="center">56.83</td>
+  </tr>
+  <tr>
+    <td align="center">SSC</td>
+    <td align ="center">Holy Family High School</td>
+    <td align="center">SSC board</td>		
+    <td align ="center">2007</td>
+<td align="center">71.52</td>
+</tr>
+</table>
+<br>
+
+	</div>
+
+	<div id="proj-div" style="display:none">
+<table border="2" style="background-color:5F9EA0">
+<tr>
+<th aligh="center">programming language</th>
+<td align="center">C++,JAVA,C#</td>
+</tr>
+<tr>
+<th aligh="left">Database</th>
+<td align="center">SQL Server 2005/08, MySQL, PL/SQL,</td>
+</tr>
+<th aligh="center">Scripting Languages </th>
+<td align="center"> PHP</td>
+</tr>
+</tr>
+<tr>
+
+</tr>
+
+
+                </table>
+	</div>
+
+	<div id="qual-div" style="display:none">
+<table border="2" style="background-color:5F9EA0">
+<tr>
+<th aligh="center">programming language</th>
+<td align="center">C++,JAVA,C#</td>
+</tr>
+<tr>
+<th aligh="left">Database</th>
+<td align="center">SQL Server 2005/08, MySQL, PL/SQL,</td>
+</tr>
+<th aligh="center">Scripting Languages </th>
+<td align="center"> PHP</td>
+</tr>
+</tr>
+<tr>
+
+</tr>
+
+
+                </table>
+
+</div>
+
+
+
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+		qual_ele.onclick = function() {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
+	
+
+		function show_techinalskill(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying skills')
+		}
+
+
+		
+
+	</script>
+<div id="section">
+<h2>personal  details</h2>
+<p><b>Date of Birth:</b> 14 Jan 1992</p>
+<p><b>Language Known:</b>:  English, Marathi, Hindi.</p>
+<p><b>Hobbies:</b> Cricket,Carrom.</p>
+<p><b>Address:</b>A-303,Prakashwadi Hsg,Soc
+                Andheri- Kurla Road, Andheri (E) Mumbai 400093</p>
+</div>
+<table border ="2">
+<tr>
+<th> Academic Projects:</th>
+<th>Techonology:</th>
+</tr>
+<tr>
+<td>Online Student Feedback System</td>
+<td>Java ,MySql</td>
+</tr>
+<tr>
+<td>Traffic Control System (Embedded )</td>
+<td>Visual basic ,MS access</td>
+</tr>
+<tr>
+<td>Budget system</td>
+<td>C# Asp.net,sql</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
