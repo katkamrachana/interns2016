@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-color:#ddd;
+	}
+	.show-btn{
+		width: 20em;
+		height : 4em;
+	}
+	#qualif{
+		width:80%;
+		border-collapse : collapse;
+
+	}
+	#qualif,td,th{
+		border:2px solid;
+		text-align : center;
+		padding : 15px;
+		
+	}
+	th{
+		background-color: #91F77D;
+	}
+	#p_details-table{
+		border-collapse:collapse;
+	}
+
+	</style>
+</head>
+<body style="margin-top:2em;">
+	<center><h2>Curriculam Vitae</h2></center>
+	<h3>
+		Name: Shailesh Jaiswal
+	</h3>
+	<button class="show-btn" id="show-qual" onclick="Qualifications()">Show Qualifications details</button>
+	<button class="show-btn" id="show-proj" onclick="show_projs()">Show Project details</button>
+	<button class="show-btn" id="persoanl-details" onclick="personal_details()">Show Personal Details</button>
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h5>My Qualifications</h5>
+		<table id="qualif">
+			<tr>
+				<th>Academic Course</th>
+				<th>Name of Institute/Board</th>
+				<th>Percentage</th>
+			</tr>
+			<tr>
+				<td>S.S.C.</td>
+				<td>Maharashtra State Board</td>
+				<td>59</td>
+			</tr>
+			<tr>
+				<td>H.S.C</td>
+				<td>Maharashtra State Board</td>
+				<td>67</td>
+			</tr>
+			<tr>
+				<td>BSC-IT</td>
+				<td>University Of Mumbai</td>
+				<td>54</td>
+			</tr>	
+			<tr>
+				<td>MCA</td>
+				<td>University Of Mumbai</td>
+				<td>Appeared</td>
+			</tr>
+					
+		</table>
+	</div>
+
+	<!-- Project Details -->
+	<div id="proj-div" style="display:none">
+		<center><h4>My Projects</h4></center>
+		<ul type="disc">
+			<li><b>Payroll Management System</b></li>
+			<p>Project done during sem–VI at the time of B.Sc.IT.<br>
+			<caption>Languages Used :-</caption>
+			Front End :- VB 6.0<br>
+			Back End :- MS Access</p>
+
+			<li><b>Bank Account Information Navigator : </b></li>
+			<p>Project done during sem &#45; IV at the time of MCA. It stores, retrieves and update customer account details and shows account balance ,deposits and withdraw account.<br>
+			<caption>Languages used :-</caption>
+			Front End :- Java<br>
+			Back End :- Oracle 10g</p>
+
+   			<li><b>Classes Management System  :</b></li>
+			<p>This system provides the functions such as Student database system, Progress Report, Attendance  record, Time Table.<br> It is a stand alone application.
+			<caption>Languages used :</caption><br>
+			Front end :-  C# dot Net. Back end :- Oracle 10g<br>
+			Hardware(Minimum requirements) : WIN XP , 256-MB RAM</p>
+	</div>
+	<!-- Project Details ENDS HERE-->
+	<!-- Personal Details STARTS HERE-->
+	<div id = "peresonal-div" style="display:none">
+			<h3><center><p>Personal Deatils</p></center></h3>
+			<table id="p_details-table">
+			<tr>
+				<td>Date of Birth	:</td>
+				<td> 29th September 1987</td>
+			</tr>
+			<tr>
+				<td>Nationality	:</td>
+				<td> Indian</td>
+			</tr>
+			<tr>
+				<td>Languages known	:</td>
+				<td>Hindi, Marathi and English</td>
+			</tr>
+			<tr>
+				<td>Cell No		: </td>
+				<td>9870925287</td>
+			</tr>
+				<td>E – Mail		:</td>
+				<td>jaiswal.shailesh7@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Address 		:</td>
+				<td>Room no.702,Jai kali Mata Co-operative housing society,Khambdev Nagar,Sion-Bandra
+		  Link road, Dharavi Mumbai – 400017.</td>
+		 	</tr>
+		  </table>
+	</div>
+	<!-- Personal Details ENDS HERE-->
+	<script>
+
+		function Qualifications(){
+			document.getElementById("qual-div").style.display="block";	
+			document.getElementById("peresonal-div").style.display="none";
+			document.getElementById("proj-div").style.display="none";
+		}
+		
+
+		function show_projs(){
+			document.getElementById("proj-div").style.display="block";
+			document.getElementById("peresonal-div").style.display="none";
+			document.getElementById("qual-div").style.display="none";
+		}
+
+		function personal_details(){
+			document.getElementById("qual-div").style.display="none";
+			document.getElementById("proj-div").style.display="none";
+			document.getElementById("peresonal-div").style.display="block";
+		}
+
+	</script>
+
+
+</body>
+</html>
