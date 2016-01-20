@@ -1,0 +1,141 @@
+<html>
+<head>
+    <style type="text/css">
+	.show-btn{
+        color: #000000;;
+  	font-weight: bold;
+	padding: 15px 32px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 2px;
+    	}
+   
+    .body{
+    background-color: green;
+    }
+    </style>
+</head>
+<body style="margin-top:2em;" bgcolor="LightPink">
+    <h1>
+        Pooja Chandrakant Nalawade
+    </h1>
+    <input type="button" class="show-btn" id="show-qual" value="Show Qualifications details">
+    <input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()">
+    <input type="button" class="show-btn" id="show-hob" value="Show Hobbies" onclick="show_hobs()">
+   
+
+
+    <!-- List Qualifications/Projects in an innovative way -->
+    <div id="qual-div" style="display:none">
+        <table style= "width: 60%">
+        <h5><font color="Black" size="3px"><I>My Qualifications</I></font></h5>
+        <tr>
+        <td><h4><font color="grey"><b>Education</b></font></h4></td>
+        <td><h4><font color="grey"><b>Board</b></font></h4></td>
+        <td><h4><font color="grey"><b>College</b></font></h4></td>
+        </tr>
+        <tr>
+        <td>MCA</td>
+        <td>Mumbai University</td>
+        <td>MET College</td>
+        </tr>
+        <tr>
+        <td>BScIT</td>
+        <td>Mumbai University</td>
+        <td>Kirti College</td>
+        </tr>
+        <tr>
+        <td>HSC</td>
+        <td>Maharashtra Board</td>
+        <td>Sophia College</td>
+        </tr>
+        <tr>
+        <td>SSC</td>
+        <td>Maharashtra Board</td>
+        <td>IES School</td>
+        </tr>
+        </table>
+        </div>
+
+    <div id="proj-div" style="display:none">
+        <h5><font color="Black" size="3px"><I>My Projects</I></font></h5>
+        <table style= "width: 62%">
+        <tr>
+        <td><h4><font color="Black"><b>Project Name</b></h4></td>
+        <td><h4><font color="Black"><b>Technology Used</b></h4></td>
+        </tr>
+        <tr>
+        <td>Hospital Management System</td>
+        <td>Java,MySQL</td>
+        </tr>
+        <tr>
+        <td>Rental</td>
+        <td>Java,plSQL</td>
+        </tr>
+        <tr>
+        <td>Bright Star Kids</td>
+        <td>Android,Java,SQLite</td>
+        </tr>
+        </table>
+    </div>
+
+    <div id="hob-div" style="display:none">
+        <h5><font color="Black" size="3px"><I>My Hobbies</I></font></h5>
+        <table style= "width: 65%">
+        <tr>
+        <td>Badminton &nbsp;,&nbsp;Reading Articles&nbsp;,&nbsp;Dancing&nbsp;,&nbsp;Listening Music</td>
+        </tr>
+    </div>
+
+
+    <script type="text/javascript">
+        var qual_ele = document.getElementById('show-qual')
+        qual_ele.onclick = function() {
+            var qual_div = document.getElementById('qual-div')
+            qual_div.style.display = "block"
+            console.log('Displaying Qualifications');
+
+                var proj_div = document.getElementById('proj-div')
+            proj_div.style.display = "none"
+            console.log('Displaying Projects');
+                
+                var hob_div = document.getElementById('hob-div')
+            hob_div.style.display = "none"
+            console.log('Displaying Languages');
+               
+        };
+
+        function show_projs(){
+            var proj_div = document.getElementById('proj-div')
+            proj_div.style.display = "block"
+            console.log('Displaying Projects');
+
+                var qual_div = document.getElementById('qual-div')
+            qual_div.style.display = "none"
+            console.log('Displaying Qualifications');
+
+                var hob_div = document.getElementById('hob-div')
+            hob_div.style.display = "none"
+            console.log('Displaying Languages');
+        }
+   
+
+        function show_hobs(){
+            var hob_div = document.getElementById('hob-div')
+            hob_div.style.display = "block"
+            console.log('Displaying Languages');
+
+                var qual_div = document.getElementById('qual-div')
+            qual_div.style.display = "none"
+            console.log('Displaying Qualifications');
+ 
+                   var proj_div = document.getElementById('proj-div')
+            proj_div.style.display = "none"
+            console.log('Displaying Projects');
+
+                 
+        }
+
+    </script>
+</body>
+</html>
