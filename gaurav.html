@@ -1,0 +1,116 @@
+<html>
+<head>
+	<style type="text/css">
+	.show-btn{
+		color: #FFF;
+  background-color: #900;
+  font-weight: bold;
+	</style>
+</head>
+<body style="margin-top:2em;" bgcolor="grey">
+	<h3>
+		Name: Gaurav Singh
+	</h3>
+	<input type="button" class="show-btn" id="show-qual" value="Show details of Qualifications">
+	<input type="button" class="show-btn" id="show-proj" value="Show details of Projects" onclick="show_projs()">
+	<input type="button" class="show-btn" id="show-hob" value="Whats my Hobbies" onclick="show_hobs()">
+	
+
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<table style= "width: 60%" border="1">
+		<h5><font color="green" size="3px">My Qualifications</font></h5>
+		<tr>
+		<td><h4><font color="blue"><b>Education</b></font></h4></td>
+		<td><h4><font color="blue"><b>Board</b></font></h4></td>
+		<td><h4><font color="blue"><b>College</b></font></h4></td>
+		</tr>
+		<tr>
+		<td>S.S.C</td>
+		<td>Maharastra Board</td>
+		<td>ST. Thomas Academy</td>
+		</tr>
+		<tr>
+		<td>H.S.C</td>
+		<td>Maharastra Board</td>
+		<td>Bhavans College</td>
+		</tr>
+		<tr>
+		<td>Bsc(IT)</td>
+		<td>Mumbai university</td>
+		<td>UPG College</td>
+		</tr>
+		<tr>
+		<td>MCA</td>
+		<td>Mumbai university</td>
+		<td>MET College</td>
+		</tr>
+		</table>
+		</div>
+
+	<div id="proj-div" style="display:none">
+		<h5><font color="green" size="3px">My Projects</font></h5>
+		<table style= "width: 65%" border="1">
+		<tr>
+		<td><h4><font color="blue"><b>Project Name</b></h4></td>
+		<td><h4><font color="blue"><b>Technology Used</b></h4></td>
+		</tr>
+		<tr>
+		<td>RMS(Recruitement Management System)</td>
+		<td>Asp.net, VB, SQL Server</td>
+		</tr>
+		<tr>
+		<td>Sales World</td>
+		<td>PHP, SQL Server</td>
+		</tr>
+		<tr>
+		<td>Issue Tracking</td>
+		<td>Java, SQL Server</td>
+		</tr>
+		<tr>
+		<td>Networking</td>
+		<td>Asp.net, C#, SQL Server</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="hob-div" style="display:none">
+		<h5><font color="green" size="3px">My Hobbies</font></h5>
+		<table style= "width: 65%" border="1">
+		<tr>
+		<td>Football &nbsp;|&nbsp;Cricket&nbsp;</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+		qual_ele.onclick = function() {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
+
+		function show_projs(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying Projects');
+		}
+	
+
+		function show_hobs(){
+			var hob_div = document.getElementById('hob-div')
+			hob_div.style.display = "block"
+		    console.log('Displaying Languages');
+		}
+
+	
+
+
+	</script>
+
+
+</body>
+</html>
