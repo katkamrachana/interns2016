@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body{
+        background-color:skyblue;
+    }
+    .show-btn{
+        width: 20em;
+        height : 4em;
+    }
+    #qualif{
+        width:80%;
+        border-collapse : collapse;
+
+    }
+    #qualif,td,th{
+        border:2px solid;
+        text-align : center;
+        padding : 15px;
+       
+    }
+    th{
+        background-color:red;
+    }
+    #p_details-table{
+        border-collapse:collapse;
+    }
+
+    </style>
+</head>
+<body style="margin-top:2em;">
+    <center><h1>CV</h1></center>
+    <h3>Ajinkya Kale</h3>
+    <button class="show-btn" id="show-qual" onclick="Qualifications()">Qualifications details</button>
+    <button class="show-btn" id="show-proj" onclick="show_projs()">Project details</button>
+    <button class="show-btn" id="persoanl-details" onclick="personal_details()">Personal Details</button>
+
+    
+    <div id="qual-div" style="display:none">
+        <h5>My Qualifications</h5>
+        <table id="qualif">
+            <tr>
+                <th>Academic Course</th>
+                <th>Name of Institute/Board</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>S.S.C.</td>
+                <td>Bishop cotton School O.F. Nagpur Division Board</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>H.S.C</td>
+                <td>SandipaniO.F. Nagpur Division Board</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>Shri Shivaji Science College O.F. RTMNU</td>
+                <td>50</td>
+            </tr>   
+            <tr>
+                <td>MCA</td>
+                <td>University Of Mumbai</td>
+                <td>60</td>
+            </tr>
+                   
+        </table>
+    </div>
+
+    <div id="proj-div" style="display:none">
+        <center><h4>My Projects</h4></center>
+        <ul type="disc">
+            <li><b>Compression/DeCompression Tools(JVM)</b></li>
+		<p>The project is mainly use for the purpose of monitoring the data which is leaked by the person from the computer.
+		Helps reduce resources usage, such as data storage space or transmission capacity.</p>
+            <li><b>KnowYourMusic(PHP,MySql) </b></li>
+            <p>Website used for playing music, making Playlist on web.Share your collection with friends just by signing them in. <br>
+            <li><b>ICS Cloud (HTML, PHP & CSS, Mysql)</b></li>
+            <p>A Cloud Computing website which offer cloud storage and remote access for the user.</p>
+
+    </div>
+   
+    <div id = "peresonal-div" style="display:none">
+            <h3><center><p>Personal Deatils</p></center></h3>
+            <table id="p_details-table">
+            <tr>
+                <td>Date of Birth    :</td>
+                <td> 16th September 1992</td>
+            </tr>
+            <tr>
+                <td>Nationality    :</td>
+                <td> Indian</td>
+            </tr>
+            <tr>
+                <td>Cell No        : </td>
+                <td>9004214050</td>
+            </tr>
+                <td>E – Mail        :</td>
+                <td>ajinkyakale007@gmail.com</td>
+            </tr>
+     
+          </table>
+    </div>
+   
+    <script>
+
+        function Qualifications(){
+            document.getElementById("qual-div").style.display="block";   
+            document.getElementById("peresonal-div").style.display="none";
+            document.getElementById("proj-div").style.display="none";
+        }
+       
+
+        function show_projs(){
+            document.getElementById("proj-div").style.display="block";
+            document.getElementById("peresonal-div").style.display="none";
+            document.getElementById("qual-div").style.display="none";
+        }
+
+        function personal_details(){
+            document.getElementById("qual-div").style.display="none";
+            document.getElementById("proj-div").style.display="none";
+            document.getElementById("peresonal-div").style.display="block";
+        }
+
+    </script>
+
+
+</body>
+</html>
