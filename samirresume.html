@@ -1,0 +1,93 @@
+<html>
+<head>
+	<style type="text/css">
+	.show-btn{
+		width: 20em;
+	}
+	</style>
+</head>
+<body style="margin-top:2em;">
+        <body>
+        <h3><center> <strong>Name: ABCDEFG</strong> </center></h3>
+        </body>       
+	
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details">
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()">
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Exam</th>
+    <th>Board/University</th>
+    <th>College</th>
+    <th>Percentage</th>
+    <th>Grade</th>
+    <th>Month & year of passing</th>
+  </tr>
+  <tr>
+    <td>B.E</td>
+    <td>North Maharashtra University</td>
+    <td>K.C.E.S's COEIT, Jalgaon</td>
+    <td>61.2%</td>
+    <td>First Class</td>
+    <td>2014</td>
+  </tr>
+  <tr>
+    <td>HSC</td>
+    <td>Maharashtra Board</td>
+    <td>M.J College,Jalgaon</td>
+    <td>61.17%</td>
+    <td>First Class</td>
+    <td>2008</td>
+  </tr>
+  <tr>
+  <td>SSC</td>
+  <td>Nashik Board</td>
+  <td>St. joseph's convent high school, Jalgaon</td>
+  <td>60.53%</td>
+  <td>First Class</td>
+  <td>2006</td>
+  </tr>
+  <tr>
+
+</table>
+	</div>
+
+	<div id="proj-div" style="display:none">
+		<h4>Academic Projects</h4>
+        <p>CDAC Project  :   (Duration: 1 month)</p></br></br>
+        <p>Title         : Online Shopping Portal   </p></br></br>
+        <p>Platform      : J2EE</p></br></br>
+        <p>Description   : Online shopping portal basically provides the way consumers go shopping and purchase services and goods with reasonable price on the Internet. Our Application aims at developing an user friendly Online Shopping Portal with the features of maintaining product catalogue,order details display, sales report generation etc.</p>
+
+
+	</div>
+
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+		qual_ele.onclick = function() {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
+
+		function show_projs(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying Projects');
+		}
+
+	</script>
+
+
+</body>
+</html>
