@@ -1,0 +1,117 @@
+<html>
+<head>
+	<style type="text/css">
+	.show-btn
+	{
+		width: 20em;
+	
+	}
+
+	.info
+	{
+		right:0;	
+	}
+	
+	div.footer
+	{
+		position: fixed;
+    		bottom: 0;
+    		right: 0;
+   		width: 300px;
+   		border: 3px solid #73AD21;	
+	}
+	</style>
+	<script type="text/javascript">
+		var qual_ele = document.getElementById('show-qual')
+	        function show_qual()
+		 {
+			var qual_div = document.getElementById('qual-div')
+			qual_div.style.display = "block"
+		    console.log('Displaying Qualifications');
+		};
+
+		function show_projs(){
+			var proj_div = document.getElementById('proj-div')
+			proj_div.style.display = "block"
+		    console.log('Displaying Projects');
+		}
+
+	</script>
+
+</head>
+<body bgcolor="skyblue" style="margin-top:2em;">
+		<div id="info">
+		<h3>Name: Roshan Suvarna</h3>
+		<h4>Email: suvarna.roshan28@gmail.com</h4>
+		<h4></h4>
+		</div>
+		<hr>
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details" onclick="show_qual()"><br/><br/>
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_projs()">
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h5>My Qualifications</h5>
+		<table style= "width: 60%">
+			<tr>
+        			<td><h4><font color="grey"><b>Education</b></font></h4></td>
+        			<td><h4><font color="grey"><b>Board</b></font></h4></td>
+        			<td><h4><font color="grey"><b>College</b></font></h4></td>
+        		</tr>
+        		<tr>
+				<td>MCA</td>
+        			<td>Mumbai university</td>
+        			<td>MET College</td>
+        			
+        		</tr>
+        		<tr>
+				<td>Bsc(IT)</td>
+        			<td>Mumbai university</td>
+        			<td>Bhavans College</td>
+       				
+        		</tr>
+        		<tr>
+       		 		<td>H.S.C</td>
+        			<td>Maharastra Board</td>
+       				<td>Patkar College</td>
+        		</tr>
+        		<tr>
+        			<td>S.S.C</td>
+        			<td>Maharastra Board</td>
+        			<td>ST. Xaviers High School</td>
+        		</tr>
+        	</table>
+
+	</div>
+
+	<div id="proj-div" style="display:none">
+		<h5>My Projects</h5>
+		<table style= "width: 62%">
+        		<tr>
+        			<td><h4><font color="grey"><b>Project Name</b></h4></td>
+        			<td><h4><font color="grey"><b>Technology Used</b></h4></td>
+        		</tr>
+			<tr>
+        			<td>World of Movies</td>
+        			<td>Android Phonegap</td>
+        		</tr>
+        		<tr>
+        			<td>Pabulam Restaurant - Online Food Ordering Portal</td>
+        			<td>Java & Oracle SQL</td>
+        		</tr>
+        		<tr>
+        			<td>Shutter Press - Online Art Gallery</td>
+       				<td>Php & MySql</td>
+        		</tr>
+        		<tr>
+        			<td>Dogs4-U - Online Shopping Portal</td>
+        			<td>Php & MySql</td>
+        		</tr>
+       	     	</table>
+	</div>
+	<div id="" style="display:none">
+		
+		
+	</div>
+</body>
+</html>
